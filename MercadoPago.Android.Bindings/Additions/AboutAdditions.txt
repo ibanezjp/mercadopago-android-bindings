@@ -46,3 +46,6 @@ public class Point
     public int X { get; set; }
     public int Y { get; set; }
 }
+
+https://www.dynamsoft.com/codepool/binding-android-library-xamarin-disaster.html
+https://www.youtube.com/watch?v=dB3DwG0OBms

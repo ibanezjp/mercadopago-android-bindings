@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="ui_linespacing_small">0dp</dimen>
+  <dimen name="ui_fontsize_large">22dp</dimen>
+  <dimen name="ui_3m"></dimen>
+
+</resources>

@@ -43,12 +43,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\ConfirmButtonAdapter.cs" />
+    <Compile Include="Additions\FromUserSelectionToAvailableMethod.cs" />
+    <Compile Include="Additions\PaymentListenerMapper.cs" />
+    <Compile Include="Additions\PaymentMethodHeaderAdapter.cs" />
+    <Compile Include="Additions\PaymentProcessorMapper.cs" />
+    <Compile Include="Additions\SummaryViewAdapter.cs" />
+    <Compile Include="Additions\TitlePagerAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\checkout-release.aar" />
+    <LibraryProjectZip Include="Jars\checkout-4.50.2.aar">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </LibraryProjectZip>
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

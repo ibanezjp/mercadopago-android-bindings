@@ -25,17 +25,17 @@
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.viewmodel.mappers']/class[@name='PayButtonViewModelMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.configuration.CustomStringConfiguration']]"
         name="managedReturn">Java.Lang.Object</attr>
 
-  <attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentListenerMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.SplitPaymentProcessor.OnPaymentListener']]/parameter[1]"
+  <!--<attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentListenerMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.SplitPaymentProcessor.OnPaymentListener']]/parameter[1]"
         name="managedType">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentListenerMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.SplitPaymentProcessor.OnPaymentListener']]"
-        name="managedReturn">Java.Lang.Object</attr>
+        name="managedReturn">Java.Lang.Object</attr>-->
 
-  <attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentProcessorMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.PaymentProcessor']]/parameter[1]"
+  <!--<attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentProcessorMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.PaymentProcessor']]/parameter[1]"
         name="managedType">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.mercadopago.android.px.core.internal']/class[@name='PaymentProcessorMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.core.PaymentProcessor']]"
-        name="managedReturn">Java.Lang.Object</attr>
+        name="managedReturn">Java.Lang.Object</attr>-->
 
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.features.business_result']/class[@name='BusinessPaymentResultMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.viewmodel.BusinessPaymentModel']]/parameter[1]"
         name="managedType">Java.Lang.Object</attr>
@@ -55,11 +55,11 @@
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.features.payment_result.mappers']/class[@name='PaymentResultViewModelMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.viewmodel.PaymentModel']]"
         name="managedReturn">Java.Lang.Object</attr>
 
-  <attr path="/api/package[@name='com.mercadopago.android.px.tracking.internal.mapper']/class[@name='FromUserSelectionToAvailableMethod']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.repository.UserSelectionRepository']]/parameter[1]"
+  <!--<attr path="/api/package[@name='com.mercadopago.android.px.tracking.internal.mapper']/class[@name='FromUserSelectionToAvailableMethod']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.repository.UserSelectionRepository']]/parameter[1]"
         name="managedType">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.mercadopago.android.px.tracking.internal.mapper']/class[@name='FromUserSelectionToAvailableMethod']/method[@name='map' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.repository.UserSelectionRepository']]"
-        name="managedReturn">Java.Lang.Object</attr>
+        name="managedReturn">Java.Lang.Object</attr>-->
 
   <remove-node path="/api/package[@name='com.mercadopago.android.px.internal.viewmodel.mappers']/class[@name='NonNullMapper']/method[@name='map' and count(parameter)=1 and parameter[1][@type='T']]" />
 
@@ -158,17 +158,27 @@
     </method>
   </add-node>
 
-  <!--<attr path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='ConfirmButtonAdapter']/method[@name='getNewModels' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.features.express.slider.HubAdapter.Model']]/parameter[1]" 
-        name="managedType">Java.Lang.Object</attr>
+  <remove-node path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='ConfirmButtonAdapter']/method[@name='getNewModels']" />
 
+  <remove-node path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='PaymentMethodHeaderAdapter']/method[@name='getNewModels']" />
+
+  <remove-node path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='SummaryViewAdapter']/method[@name='getNewModels']" />
+
+  <remove-node path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='TitlePagerAdapter']/method[@name='getNewModels']" />
+
+  <!--<attr path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='ConfirmButtonAdapter']/method[@name='getNewModels' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.features.express.slider.HubAdapter.Model']]" 
+        name="managedReturn">Java.Lang.Object</attr>-->
+
+  <!--
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='PaymentMethodHeaderAdapter']/method[@name='getNewModels' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.features.express.slider.HubAdapter.Model']]/parameter[1]"
-        name="managedType">Java.Lang.Object</attr>
+        name="managedReturn">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='SummaryViewAdapter']/method[@name='getNewModels' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.features.express.slider.HubAdapter.Model']]/parameter[1]"
-        name="managedType">Java.Lang.Object</attr>
+        name="managedReturn">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='TitlePagerAdapter']/method[@name='getNewModels' and count(parameter)=1 and parameter[1][@type='com.mercadopago.android.px.internal.features.express.slider.HubAdapter.Model']]/parameter[1]"
-        name="managedType">Java.Lang.Object</attr>-->
+        name="managedReturn">Java.Lang.Object</attr>      
+  -->
 
   <!--<add-node path="/api/package[@name='com.mercadopago.android.px.internal.features.express.slider']/class[@name='ConfirmButtonAdapter']">
     <method abstract="false" deprecated="not deprecated" final="false" name="GetNewModels" native="false" return="Java.Lang.Object" static="false" synchronized="false" visibility="public">
